@@ -104,7 +104,89 @@ for (let x = 0; x < numbers.length; x++){
 }
 
 //5. Const numbers = [3,7,2,5,10,6]. Given the array of numbers. find and print the largest numbers number.
-const numbers = [3,7,5,10,6];
-for (let x = 3;x +=5; x++) {
-    console.log(x);
+const Arraynumbers = [3,7,5,10,6];
+let largest = Arraynumbers[0];
+for (let x = 1;x < Arraynumbers.length; x++) {
+    if (Arraynumbers[x] > largest) {
+        largest = Arraynumbers[x];
+    }
 }
+console.log(largest);
+
+//Execerise 4: While loops
+//1. Print numbers from 1 to 10.
+let i = 1;
+while (i <= 10){
+    console.log(i);
+    i++;
+}
+
+//2. Print all the even numbers between 1 and 20.
+let a = 1;
+while (a <= 20){
+    if (a % 2 == 0){
+        console.log(a);
+    }
+    a++;
+}
+
+//3. Calculate the sum of all numbers from 1 to 100 and print the result.
+let total = 0;
+let y = 1;
+while (y <= 100) {
+    total += i;
+    y++;
+}
+console.log(total);
+
+//4. Print all multiple of 5 less than 50.
+let z = 1;
+while (z < 50) {
+    if (z % 5 == 0) {
+        console.log(z);
+    }
+    z++;
+}
+console.log(z);
+
+//Execerise 5: Do While loops
+//1. Print numbers from 1 to 1o.
+let b = 1;
+do {
+    console.log(b);
+    b++;
+}while (b <= 10);
+
+//2. Calculate the sum of all numbers from 1 to 100 and print the result.
+let Add = 0;
+let c = 1;
+do {
+    sum += c;
+    c++;
+}while (c <= 100);
+console.log(Add);
+
+//3. Prompt the user to enter a number greater than 10. keep asking until they enter a valid number.
+let personNum;
+do {
+    personNum = parseInt(prompt("Enter a number greater than 10:"));
+}while (isNaN(personNum) || personNum <= 10);
+console.log(`Thank you! You entered ${personNum}`);
+
+//4. Create a simple guessing game where the user guess a number between 1 and 10. The game continues until user guesses the correct number.
+const secretNum = (Math.floor() * 10) + 1;
+let guess;
+let attempts = 0;
+
+do {
+    guess = parseInt(prompt("Guess the number (1-10):"));
+    attempts++;
+    if (guess === secretNum) {
+        console.log(`Correct! You guess it in ${attempts} attempts.`);
+    } else if (guess > secretNum) {
+        console.log("Too high! Try again.");
+        } else if (guess < secretNum) {
+            console.log("Too low! Try again.");
+        }
+    } while (guess !== secretNum);
+   
