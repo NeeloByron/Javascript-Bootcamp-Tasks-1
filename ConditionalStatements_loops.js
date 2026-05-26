@@ -168,6 +168,7 @@ console.log(Add);
 
 //3. Prompt the user to enter a number greater than 10. keep asking until they enter a valid number.
 let personNum;
+const prompt = require('prompt-sync')({sigint: true });
 do {
     personNum = parseInt(prompt("Enter a number greater than 10:"));
 }while (isNaN(personNum) || personNum <= 10);
