@@ -1,15 +1,15 @@
-//Exercise 1: Declaration
-//1. Declare name
+//Exercise 1: Variable Declaration
+//1. Declare a variable 'name' and assign your name to it.
 let name = "Byron"
-//2. Declare age
+//2. Declare a variable 'age' and assign your age to it.
 let age = 29
-//3. Declare isStudent & boolean assigned 
+//3. Declare 'isStudent' and assign it to a boolean value indicating whether you are a student or not.
 let isStudent = true
 //4. Print all 3 variables
 console.log(name, age, isStudent)
 
 //Exercise 2: Variable
-//1. Declare favoriteColour & assign favoriteColor
+//1. Declare a variable 'favoriteColour' and assign your favourite colour to it.
 let favoriteColour = 'Red'
 //2. Print value of favoriteColor
 console.log(favoriteColour);
