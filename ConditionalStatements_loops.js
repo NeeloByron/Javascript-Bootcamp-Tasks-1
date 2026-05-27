@@ -46,7 +46,7 @@ if (number % 2 == 0 && number % 3 == 0) {
 }
 //b. *if the number is divisible by only 2, print"Divisible by 2."
 else if (number % 2 == 0) {
-    console.log("Divisible by 2");
+    console.log('Divisible by 2');
 }
 //c. *if the number is divisible by only 3, print"Divisible by 3."
 else if (number % 3 == 0) {
@@ -175,7 +175,13 @@ do {
 console.log(`Thank you! You entered ${personNum}`);
 
 //4. Create a simple guessing game where the user guess a number between 1 and 10. The game continues until user guesses the correct number.
-const secretNum = (Math.floor() * 10) + 1;
+const readline = require("readline");
+const rl = readline.createInterface ({
+    input: process.stdin,
+    output: process.stdout
+});
+
+const secretNum = Math.floor(Math.random() * 10) + 1;
 let guess;
 let attempts = 0;
 
