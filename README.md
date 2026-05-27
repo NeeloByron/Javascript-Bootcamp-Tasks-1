@@ -6,7 +6,7 @@ A simple number guessing game built with Node.js
    https://github.com/NeeloByron/Javascript-Bootcamp-Tasks-1.git
 
 #. Install dependencies:
-  npm install prompt-sync
+  - npm install prompt-sync
 
 #. Run the game:
    - node ConditionalStatement_loops.js
